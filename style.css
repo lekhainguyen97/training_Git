@@ -1,0 +1,228 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+*:focus {
+    outline: none;
+}
+main{
+    min-height: 100vh;
+    background: linear-gradient(to right top,  #65dfc9, #6cdbeb);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.glass{
+    background: white;
+    min-height: 80vh;
+    width: 60%;
+    background: linear-gradient(to right top, rgba(225,225,225,0.7),rgba(225,225,225,0.3));
+    border-radius: 20px;
+    z-index: 2;
+    backdrop-filter: blur(20px);
+    display: flex;
+}
+.circle1, .circle2{
+    background: linear-gradient(to right bottom, rgba(225,225,225,1),rgba(225,225,225,0.5));
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+}
+.circle1{
+    top: 5%;
+    right: 15%;
+}
+.circle2{
+    bottom: 5%;
+    left: 15%;
+}
+/*
+.dashboard{
+    padding: 20px 20px;
+    min-height: 80vh;
+    width: 30%;
+    background: linear-gradient(to right, rgba(225,225,225,1),rgba(225,225,225,0.8));
+    border-radius: 20px;
+    text-align: center;
+}
+.avatar img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: flex;
+    margin: 0px auto;
+}
+.menu{
+    list-style-type: none;
+    margin: 20px auto;
+    padding: 0;
+}
+.menu li{
+    margin-bottom: 30px;
+}
+.icon{
+    display: inline;
+    color: skyblue;
+    opacity: 0.8;
+    font-size: 30px;
+    vertical-align: middle;
+}
+.menu a{
+    text-decoration: none;
+    color: skyblue;
+    opacity: 0.8;
+}
+.aboutme{
+    width: 100%;
+    background: #65dfc9;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+.aboutme p{
+    color: white;
+    width: 50%;
+    font-size: large;
+}
+.aboutme img{
+    width: 80px;
+    margin-left: 30px;
+}
+*/
+.dashboard{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    background: linear-gradient(to right bottom, rgba(225,225,225,0.7),rgba(225,225,225,0.3));
+    border-radius: 20px;
+}
+.games{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.avatar img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.menu{
+    list-style-type: none;
+}
+.menu li{
+   display: flex;
+   margin: 10px 0;
+   padding: 10px 0px;
+   align-items: center  ;
+}
+.icon{
+    flex: 2;
+    color: skyblue;
+    opacity: 0.8;
+    font-size: 30px;
+}
+.menu a{
+    flex: 3;
+    text-decoration: none;
+    color: skyblue;
+    opacity: 0.8;
+    padding: 0 20px;
+}
+.aboutme{
+    background: #65dfc9;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+.aboutme p{
+    flex: 1;
+    color: white;
+}
+.aboutme img{
+    flex: 1;
+    width: 50px;
+    padding: 20px 30px;
+}
+.card img{
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20%;
+}
+.status{ 
+    justify-content: space-evenly;
+    margin-left: 40px;
+}
+.status h1{
+    color: royalblue;
+    font-style: italic;
+    font-size: 70px;
+}
+.status input{
+    border: none;
+    background: linear-gradient(to right , rgba(225,225,225,0.9),rgba(225,225,225,0.6));
+    width: 50%;
+    height: 30px;
+    border-radius: 20px;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+.card{
+    display: flex;
+  background: linear-gradient(
+    to left top,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.5)
+  );
+  border-radius: 20px;
+  margin: 10px 50px;
+  padding: 20px;
+  box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+  justify-content: space-between;
+}
+.infor{
+    width: 100%;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.infor p{
+    font-size: 10px;  
+}
+.infor h2{
+    font-size: 20px;  
+}
+.progress{
+    width: 100%;
+    height: 25%;
+    border-radius: 20px;
+    position: relative;
+    background: linear-gradient(to right top,  #65dfc9, #6cdbeb);
+    overflow: hidden;
+}
+.progress:after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right top,  #b7bbba, #bdc4c5);
+    position: absolute;
+    left: 60%;
+}
+h2.persentage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right top,   #65dfc9, #6cdbeb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
